@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+#SP {
+  position: relative;
+  width: 100vw;
+  height: 12vw;
+  background-color: aqua;
+}
+#SP .header {
+  position: absolute;
+  height: 12vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu-btn {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  right: 0;
+  background-color: #000;
+}
+
+main {
+  
+}
