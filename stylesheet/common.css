@@ -1,21 +1,56 @@
 @charset "UTF-8";
+html {
+  font-size: 10px;
+}
 
 #SP {
   position: relative;
   width: 100vw;
-  height: 12vw;
-  background-color: aqua;
+  height: 20vw;
+  background-color: #222;
 }
 #SP .header {
   position: absolute;
   height: 12vw;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 .menu-btn {
   position: absolute;
-  width: 12vw;
-  height: 12vw;
+  width: 20vw;
+  height: 20vw;
   right: 0;
   background-color: #000;
+}
+.menu-btn-bar {
+  position: absolute;
+  left: 5vw;
+  width: 10vw;
+  height: 1vw;
+  transform: translateY(0) rotate(0deg);
+  background-color: #fff;
+}
+.menu-btn_top {
+  top: 5vw;
+}
+.menu-btn_middle {
+  top: 9vw;
+}
+.menu-btn_bottom {
+  top: 13vw;
+}
+
+.top {
+  height: calc(100vh - 20vw);
+  width: 100%;
+  overflow: hidden;
+}
+.top-bg {
+  position: relative;
+  height: 150%;
+  width: auto;
+  top: -250px;
+  left: -250px;
+  filter: blur(6px);
 }
