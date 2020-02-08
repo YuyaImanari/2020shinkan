@@ -2,14 +2,16 @@
 html {
   font-size: 10px;
 }
-
+header {
+  z-index: 100;
+}
 #SP {
   position: relative;
   width: 100vw;
   height: 20vw;
   background-color: #222;
 }
-#SP .header {
+#SP .header-img {
   position: absolute;
   height: 12vw;
   top: 50%;
@@ -41,16 +43,6 @@ html {
   top: 13vw;
 }
 
-.top {
-  height: calc(100vh - 20vw);
-  width: 100%;
-  overflow: hidden;
-}
-.top-bg {
-  position: relative;
-  height: 150%;
-  width: auto;
-  top: -250px;
-  left: -250px;
-  filter: blur(6px);
+.center {
+  text-align: center;
 }

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.top {
+  position: relative;
+  height: calc(100vh - 20vw);
+  width: 100%;
+  overflow: hidden;
+  color: #eee;
+}
+
+.top-bg {
+  position: absolute;
+  height: 150%;
+  top: -250px;
+  left: -250px;
+  filter: blur(4px) brightness(30%) saturate(120%);
+}
+
+.top-title, .top-message {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.top-title h1 {
+  position: relative;
+  display: inline-block;
+  top: 30%;
+}
+.top-message p {
+  position: relative;
+  top: 60%;
+}
+
+/* 画面横向き時のtop-bg imgに注意！ */
