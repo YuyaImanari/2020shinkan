@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+.top-bar {
+  position: relative;
+  height: 20vw;
+  width: 100vw;
+  background-color: #000;
+}
+.top-bar img {
+  position: absolute;
+  height: 12vw;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 .top {
   position: relative;
   height: calc(100vh - 20vw);
@@ -16,7 +30,7 @@
   filter: blur(4px) brightness(30%) saturate(120%);
 }
 
-.top-title, .top-message {
+.top-title, .top-message, .top-arrow {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -29,6 +43,13 @@
 .top-message p {
   position: relative;
   top: 60%;
+}
+.top-arrow p {
+  position: relative;
+  top: 80%;
+}
+.top-arrow i {
+  font-size: 2.4rem;
 }
 
 /* 画面横向き時のtop-bg imgに注意！ */
