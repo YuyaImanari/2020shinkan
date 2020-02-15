@@ -2,6 +2,15 @@
 html {
   font-size: 10px;
 }
+p, a, span, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+}
+h1 {
+  font-size: 3.2rem;
+}
+p {
+  font-size: 1.6rem;
+}
 .header {
   z-index: 100;
 }
