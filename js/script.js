@@ -1,7 +1,7 @@
 $(function () {
   $('#menu-btn').click(function () {
     var width = $(window).width();
-    var slideTime = 500;
+    var slideTime = 400;
     $(this).toggleClass('open')
     $('body').toggleClass('open');
     if ($(this).hasClass('open')) {

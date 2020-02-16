@@ -1,5 +1,10 @@
 @charset "UTF-8";
-
+h1 {
+  font-size: 3.2rem;
+}
+.top p {
+  font-size: 1.6rem;
+}
 .top {
   position: relative;
   height: calc(100vh - 20vw);
