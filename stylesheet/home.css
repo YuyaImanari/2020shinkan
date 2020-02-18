@@ -43,4 +43,21 @@ h1 {
   font-size: 2.4rem;
 }
 
+.session table {
+  /* flex: auto; */
+  width: 45%;
+}
+.session table tr td:nth-child(1) {
+  width: 30%;
+}
+.session table tr td:nth-child(2) {
+  width: 30%;
+}
+.session table tr td:nth-child(3) {
+  width: 35%;
+}
+.session table tr td:nth-child(4) {
+  width: 5%;
+}
 /* 画面横向き時のtop-bg imgに注意！ */
+/* パソコン画面での日程表はカレンダー形式？ */

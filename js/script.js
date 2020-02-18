@@ -16,4 +16,11 @@ $(function () {
       $('#menu').animate({ 'left': width }, slideTime);
     }
   });
+  $('.menu-samepage').click(function () {
+    var width = $(window).width();
+    $('#menu-btn').removeClass('open');
+    $('#menu').css('left', width);
+    $('body').removeClass('open');
+    $('body').css('overflow', 'visible');
+  })
 });

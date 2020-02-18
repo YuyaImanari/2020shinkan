@@ -5,25 +5,42 @@ html {
 main {
   min-height: calc(100vh - 20vw - 2.0rem);
 }
-p, a, span, h1, h2, h3, h4, h5, h6 {
+p, a, span, h1, h2, h3, h4, h5, h6, table, ul, ol {
   font-family: 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
   font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  margin-top: 2.0rem;
 }
 h1, h2 {
   font-size: 2.4rem;
+  margin-top: 2.0rem;
 }
-p {
-  font-size: 1.6rem;
+h3 {
+  font-size: 1.8rem;
 }
+p, ul, ol, table {
+  font-size: 1.2rem;
+}
+ul {
+  list-style: none;
+}
+table {
+  margin: 0.8rem;
+}
+
 .center {
   text-align: center;
 }
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
 .wrapper + .wrapper {
   margin-top: 2.0rem;
+}
+.content {
+  margin: 0.8rem 2.0rem;
 }
 
 /* 以下、個別要素  */
