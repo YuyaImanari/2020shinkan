@@ -44,7 +44,6 @@ h1 {
 }
 
 .session table {
-  /* flex: auto; */
   width: 45%;
 }
 .session table tr td:nth-child(1) {
@@ -58,6 +57,15 @@ h1 {
 }
 .session table tr td:nth-child(4) {
   width: 5%;
+}
+.other-event table {
+  width: calc(100% - 40px);
+}
+.other-event table tr td:nth-child(1) {
+  width: 30%;
+}
+.other-event table tr td:nth-child(2) {
+  width: 70%;
 }
 /* 画面横向き時のtop-bg imgに注意！ */
 /* パソコン画面での日程表はカレンダー形式？ */

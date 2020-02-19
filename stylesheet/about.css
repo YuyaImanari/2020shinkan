@@ -1,4 +1,34 @@
 @charset "UTF-8";
 
-/* ▼ ここに記述 ▼ */
-/* ▲ ここに記述 ▲ */
+body {
+  background:
+    -webkit-linear-gradient(280deg, hsla(30, 80%, 65%, 1) 0%, hsla(30, 80%, 65%, 0) 25%),
+    -webkit-linear-gradient(40deg, hsla(205, 100%, 67%, 1) 0%, hsla(205, 100%, 67%, 0) 20%),
+    -webkit-linear-gradient(330deg, hsla(0, 100%, 75%, 1) 0%, hsla(0, 100%, 75%, 0) 60%),
+    -webkit-linear-gradient(270deg, hsla(130, 35%, 75%, 1) 40%, hsla(130, 35%, 75%, 0) 75%),
+    -webkit-linear-gradient(135deg, hsla(300, 100%, 75%, 1) 0%, hsla(300, 100%, 75%, 0) 40%),
+    -webkit-linear-gradient(330deg, hsla(180, 100%, 50%, 1) 40%, hsla(180, 100%, 50%, 0) 100%);
+  background:
+    linear-gradient(170deg, hsla(30, 80%, 65%, 1) 0%, hsla(30, 80%, 65%, 0) 25%),
+    linear-gradient(50deg, hsla(205, 100%, 67%, 1) 0%, hsla(205, 100%, 67%, 0) 20%),
+    linear-gradient(120deg, hsla(0, 100%, 75%, 1) 0%, hsla(0, 100%, 75%, 0) 60%),
+    linear-gradient(180deg, hsla(130, 35%, 75%, 1) 40%, hsla(130, 35%, 75%, 0) 75%),
+    linear-gradient(315deg, hsla(300, 100%, 75%, 1) 0%, hsla(300, 100%, 75%, 0) 40%),
+    linear-gradient(120deg, hsla(180, 100%, 50%, 1) 40%, hsla(180, 100%, 50%, 0) 100%);
+}
+
+.youtube {
+  position: relative;
+  width: calc(100% - 40px);
+  height: 0;
+  padding-top: calc((100% - 40px) * 0.5625);
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}

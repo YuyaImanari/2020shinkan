@@ -25,6 +25,9 @@ p, ul, ol, table {
 ul {
   list-style: none;
 }
+ol {
+  margin-left: 1.2rem;
+}
 table {
   margin: 0.8rem;
 }
