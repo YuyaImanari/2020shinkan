@@ -67,5 +67,14 @@ h1 {
 .other-event table tr td:nth-child(2) {
   width: 70%;
 }
+
+.twitter-wrapper {
+  width: calc(100vw - 4.0rem);
+  height: calc(100vw - 5.6rem);
+  border: 1px solid black;
+  border-radius: 2%;
+  margin: 0.8rem 0;
+  padding: 2%;
+}
 /* 画面横向き時のtop-bg imgに注意！ */
 /* パソコン画面での日程表はカレンダー形式？ */
