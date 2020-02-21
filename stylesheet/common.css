@@ -2,6 +2,12 @@
 html {
   font-size: 10px;
 }
+@media screen and (max-width:350px) {
+  html {
+    font-size: 9px;
+  }
+}
+
 main {
   min-height: calc(100vh - 20vw - 2.0rem);
   width: 100vw;

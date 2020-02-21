@@ -6,45 +6,81 @@
   flex-wrap: wrap;
 }
 .container {
+  position: relative;
   width: 100%;
   height: 100vw;
 }
 .container img {
+  position: absolute;
   width: 100%;
 }
+.white-box {
+  position: absolute;
+  top: 2.0rem;
+  bottom: 2.0rem;
+  left: 2.0rem;
+  right: 2.0rem;
+  background-color: rgba(225, 225, 225, 0.6);
+}
+.department-title-en {
+  position: absolute;
+  top: 2.8rem;
+  left: 2.8rem;
+  font-size: 9.6rem;
+  line-height: 9.6rem;
+  font-weight: 700;
+}
+.department-title-ja {
+  position: absolute;
+  top: 13rem;
+  left: 3.2rem; /* ちょっと右にずらしてある */
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+.department-intro {
+  display: inline-block;
+  position: absolute;
+  top: 19rem;
+  left: 2.8rem;
+  right: 2.8rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: justify;
+}
 .ev {
-  background-color: skyblue;
+  background-color: #0FF;
 }
 .ev img {
-  opacity: 0.6;
+  opacity: 0.5;
 }
-.fa {
-  background-color: red;
+.sh {
+  background-color: #F00;
 }
-.fa img {
-  opacity: 0.6;
+.sh img {
+  opacity: 0.5;
 }
 .pr {
-  background-color: blue;
+  background-color: #00F;
 }
 .pr img {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .fp {
-  background-color: chartreuse;
+  background-color: #8F0;
 }
 .fp img {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .wm {
-  background-color: orange;
+  background-color: #F90;
 }
 .wm img {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .ga {
-  background-color: violet;
+  background-color: #F4F;
 }
 .ga img {
-  opacity: 0.6;
+  opacity: 0.5;
 }
