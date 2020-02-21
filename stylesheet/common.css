@@ -4,6 +4,7 @@ html {
 }
 main {
   min-height: calc(100vh - 20vw - 2.0rem);
+  width: 100vw;
 }
 p, a, span, h1, h2, h3, h4, h5, h6, table, ul, ol {
   font-family: 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
@@ -15,18 +16,23 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
   font-size: 2.4rem;
   margin-top: 2.0rem;
+  font-weight: 500;
 }
 h3 {
   font-size: 1.8rem;
 }
+/* aタグ追加注意！メニューが崩れます！ */
 p, ul, ol, table {
-  font-size: 1.2rem;
+  font-size: 1.3rem; /* 変更するかも */
+}
+p {
+  line-height: 2.4rem;
 }
 ul {
   list-style: none;
 }
 ol {
-  margin-left: 1.2rem;
+  margin-left: 1.3rem;
 }
 table {
   margin: 0.8rem;
