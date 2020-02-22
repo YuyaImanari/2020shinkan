@@ -22,5 +22,5 @@ $(function () {
     $('#menu').css('left', width);
     $('body').removeClass('open');
     $('body').css('overflow', 'visible');
-  })
+  });
 });

@@ -18,7 +18,7 @@ h1 {
   height: 150%;
   top: -250px;
   left: -250px;
-  filter: blur(4px) brightness(30%) saturate(120%);
+  filter: blur(1px) brightness(40%) saturate(120%);
 }
 
 .top-title, .top-message, .top-arrow {

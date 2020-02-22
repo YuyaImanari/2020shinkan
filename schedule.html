@@ -36,6 +36,9 @@
   <script src="https://kit.fontawesome.com/e6abc37d94.js" crossorigin="anonymous"></script>
   <!-- ▼ Google Fonts ▼ -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300&display=swap&subset=japanese" rel="stylesheet">
+
+  <!-- NO INDEX -->
+  <meta name="robots" content="noindex">
 </head>
 
 <body>
@@ -70,8 +73,61 @@
     </div>
   </div>
   <main>
-    <!-- ▼ ここに記述！ ▼ -->
-    <!-- ▲ ここに記述！ ▲ -->
+    <h1>AGESTOCKの1年間</h1>
+    <div class="schedule">
+      <div id="season-list-window" class="season-list-window">
+        <div class="season-list-wrapper"> <!-- 右余白が設定できない -->
+          <ul id="season-list" class="season-list spring">
+            <li id="spring-dot"><h2 id="spring">春</h2></li>
+            <li id="summer-dot"><h2 id="summer">夏</h2></li>
+            <li id="automn-dot"><h2 id="automn">秋</h2></li>
+            <li id="winter-dot"><h2 id="winter">冬</h2></li>
+          </ul>
+        </div>
+      </div>
+      <div class="season-contents-window">
+        <ul id="season-contents" class="season-contents">
+          <li>
+            <div class="season-picture">
+              <img src="images/schedule/spring_1.jpg" alt="活動写真-春1">
+              <img src="images/schedule/spring_2.jpg" alt="活動写真-春2">
+            </div>
+            <div class="season-text">
+              <div class="content">
+                <h3>春イベント</h3>
+                <p>春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="season-picture">
+              <img src="images/schedule/summer_1.jpg" alt="活動写真-夏1">
+              <img src="images/schedule/summer_2.jpg" alt="活動写真-夏2">
+            </div>
+            <div class="season-text">
+              <div class="content">
+                <h3>春イベント</h3>
+                <p>春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！ばんざい！春イベ！</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="season-picture">
+              <img src="images/schedule/autumn_1.JPG" alt="活動写真-秋1">
+              <img src="images/schedule/autumn_2.JPG" alt="活動写真-秋2">
+            </div>
+            <div class="season-text"></div>
+          </li>
+          <li>
+            <div class="season-picture">
+              <img src="images/schedule/winter_1.jpg" alt="活動写真-冬1">
+              <img src="images/schedule/winter_2.jpg" alt="活動写真-冬2">
+            </div>
+            <div class="season-text"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <p class="copyright center">Copyright&copy;AGESTOCK2019実行委員会 All Rights Reserved.</p>
@@ -79,6 +135,8 @@
 </body>
 <!-- ▼ メニュー ▼ -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/schedule.js"></script>
 
 </html>

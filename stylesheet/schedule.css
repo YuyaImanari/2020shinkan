@@ -1,4 +1,86 @@
 @charset "UTF-8";
 
-/* ▼ ここに記述 ▼ */
-/* ▲ ここに記述 ▲ */
+body {
+  background-color: #FCD;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+.season-list-window {
+  width: 100vw;
+  margin-top: 2.0rem;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.season-list-window::-webkit-scrollbar {
+  display: none;
+}
+.season-list-wrapper {
+  position: relative;
+  width: 220vw;
+  height: 6.0rem;
+}
+.season-list {
+  /* position: relative; */
+  margin: 0 10vw;
+  padding: 0 20vw;
+  background: url(../images/dot.png) left 4.0rem/0.5rem repeat-x;
+}
+.season-list li {
+  display: inline-block;
+  width: 40vw;
+  height: 6.0rem;
+  margin: 0 -1.3px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.spring li {
+  background: url(../images/dot-spring.png) center 3.2rem/2.0rem no-repeat;
+}
+.spring #spring-dot {
+  background: url(../images/dot-black.png) center 3.2rem/2.0rem no-repeat;
+}
+.summer li {
+  background: url(../images/dot-summer.png) center 3.2rem/2.0rem no-repeat;
+}
+.summer #summer-dot {
+  background: url(../images/dot-black.png) center 3.2rem/2.0rem no-repeat;
+}
+.automn li {
+  background: url(../images/dot-automn.png) center 3.2rem/2.0rem no-repeat;
+}
+.automn #automn-dot {
+  background: url(../images/dot-black.png) center 3.2rem/2.0rem no-repeat;
+}
+.winter li {
+  background: url(../images/dot-winter.png) center 3.2rem/2.0rem no-repeat;
+}
+.winter #winter-dot {
+  background: url(../images/dot-black.png) center 3.2rem/2.0rem no-repeat;
+}
+h2 {
+  margin: 0;
+  width: 50%;
+  margin: 0 auto;
+}
+.season-contents-window {
+  width: 100vw;
+  overflow: hidden;
+}
+.season-contents {
+  position: relative;
+  width: 401vw; /* 謎 */
+}
+.season-contents li {
+  display: inline-block;
+  vertical-align: top;
+  width: 100vw;
+  margin: -1px; /* 謎 */
+}
+.season-picture {
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+}
+.season-picture img {
+  flex-grow: 1;
+  min-width: 0;
+}
