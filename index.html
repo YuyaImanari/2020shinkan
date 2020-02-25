@@ -7,15 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149340206-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159026298-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-149340206-1');
-  </script> -->
-
+    gtag('config', 'UA-159026298-1');
+  </script>
   <!-- ▼ SNS設定 ▼ -->
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="新歓サイト | AGESTOCK2020">
@@ -27,7 +26,6 @@
   <meta property="og:image" content="http://www.agestock.jp/2020shinkan/images/(画像URL)">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@_AGESTOCK">
-
   <!-- ▼ サイト設定 ▼ -->
   <title>新歓サイト | AGESTOCK2020</title>
   <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
@@ -37,7 +35,7 @@
   <link rel="icon" type="image/png" href="images/favicon-192.png" sizes="192x192">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <!-- 正規化 -->
-  <!-- <link rel="canonical" href="http://agestock.jp/2020shinkan/index.html"> -->
+  <link rel="canonical" href="http://agestock.jp/2020shinkan/">
   <!-- ▼ CSS読み込み ▼ -->
   <link rel="stylesheet" href="stylesheet/reset.css">
   <link rel="stylesheet" href="stylesheet/common.css">
@@ -45,7 +43,7 @@
   <!-- ▼ Font-Awesome ▼ -->
   <script src="https://kit.fontawesome.com/e6abc37d94.js" crossorigin="anonymous"></script>
   <!-- ▼ Google Fonts ▼ -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,500&display=swap&subset=japanese" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,500|Noto+Serif+JP:300&display=swap&subset=japanese" rel="stylesheet">
 
   <!-- NO INDEX -->
   <meta name="robots" content="noindex">
@@ -54,7 +52,8 @@
 <body>
   <div id="SP" class="header">
     <div class="top-bar">
-      <img src="images/header_sp_w.png" alt="AGEロゴ">
+      <!-- <img src="images/header_sp_w.png" alt="AGEロゴ"> -->
+      <img src="images/header_sp.png" alt="ヘッダー画像">
     </div>
     <div id="menu-btn" class="menu-btn">
       <span class="menu-btn-bar"></span>
@@ -77,7 +76,7 @@
           <li><a href="message.html">新入生へのメッセージ</a></li>
           <li><a href="question.html">よくある質問</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
-          <li><a href="http://www.agestock.jp/2020spring/index.html">春イベ詳細</a></li>
+          <li><a href="http://www.agestock.jp/2020spring/index.html" target="_blank">春イベ詳細</a></li>
         </ul>
       </div>
     </div>
@@ -88,10 +87,9 @@
       <div class="top-title center">
         <h1>AGESTOCK2020<br>新歓特設サイト</h1>
       </div>
-      <div class="top-message center">
-        <!-- フォント変えたい、手書き風アニメーション？ -->
+      <!-- <div class="top-message center">
         <p>君が彩る学生生活</p>
-      </div>
+      </div> -->
       <div class="top-arrow center">
         <p>新歓情報<br><i class="fas fa-chevron-down"></i></p>
       </div>
@@ -107,35 +105,41 @@
       <div class="content session">
         <h3>新歓説明会日程表</h3>
         <p>会場の詳細は一覧の最後に記載しております。</p>
-        <div class="flex">
+        <div class="calendar">
           <table>
-            <caption>3･4月</caption>
+            <caption>3月</caption>
             <!-- <thead><tr><th>月日</th><th>集合時刻</th><th>集合場所</th><th>備考</th></tr></thead> -->
             <tbody>
-              <tr><td>3/18(水)</td><td>18:00</td><td>新宿</td><td></td></tr>
-              <tr><td>3/24(火)</td><td>18:00</td><td>新宿</td><td></td></tr>
-              <tr><td>3/27(金)</td><td>18:00</td><td>新宿</td><td></td></tr>
-              <tr><td>4/5(日)</td><td>14:30</td><td>渋谷</td><td></td></tr>
-              <tr><td>4/7(火)</td><td>18:00</td><td>オリセン</td><td></td></tr>
-              <tr><td>4/10(金)</td><td>18:00</td><td>渋谷</td><td></td></tr>
-              <tr><td>4/13(月)</td><td>18:00</td><td>オリセン</td><td></td></tr>
-              <tr><td>4/17(金)</td><td>18:00</td><td>渋谷</td><td><i class="fas fa-utensils"></i></td></tr>
-              <tr><td>4/23(木)</td><td>18:00</td><td>渋谷</td><td></td></tr>
-              <tr><td>4/25(土)</td><td>15:00</td><td>渋谷</td><td><i class="fas fa-utensils"></i></td></tr>
-              <tr><td>4/28(火)</td><td>18:00</td><td>オリセン</td><td></td></tr>
-              <tr><td>4/30(木)</td><td>18:00</td><td>新宿</td><td></td></tr>
+              <tr><td>18(水)</td><td>18:00</td><td>新宿</td><td></td></tr>
+              <tr><td>24(火)</td><td>18:00</td><td>新宿</td><td></td></tr>
+              <tr><td>27(金)</td><td>18:00</td><td>新宿</td><td></td></tr>
+            </tbody>
+          </table>
+          <table>
+            <caption>4月</caption>
+            <!-- <thead><tr><th>月日</th><th>集合時刻</th><th>集合場所</th><th>備考</th></tr></thead> -->
+            <tbody>
+              <tr><td>5(日)</td><td>14:30</td><td>渋谷</td><td></td></tr>
+              <tr><td>7(火)</td><td>18:00</td><td>オリセン</td><td></td></tr>
+              <tr><td>10(金)</td><td>18:00</td><td>渋谷</td><td></td></tr>
+              <tr><td>13(月)</td><td>18:00</td><td>オリセン</td><td></td></tr>
+              <tr><td>17(金)</td><td>18:00</td><td>渋谷</td><td><i class="fas fa-utensils"></i></td></tr>
+              <tr><td>23(木)</td><td>18:00</td><td>渋谷</td><td></td></tr>
+              <tr><td>25(土)</td><td>15:00</td><td>渋谷</td><td><i class="fas fa-utensils"></i></td></tr>
+              <tr><td>28(火)</td><td>18:00</td><td>オリセン</td><td></td></tr>
+              <tr><td>30(木)</td><td>18:00</td><td>新宿</td><td></td></tr>
             </tbody>
           </table>
           <table>
             <caption>5月</caption>
             <!-- <thead><tr><th>月日</th><th>集合時刻</th><th>集合場所</th><th>備考</th></tr></thead> -->
             <tbody>
-              <tr><td>5/8(金)</td><td>18:00</td><td>新宿</td><td><i class="fas fa-utensils"></i></td></tr>
-              <tr><td>5/13(水)</td><td>18:00</td><td>新宿</td><td></td></tr>
-              <tr><td>5/18(月)</td><td>18:00</td><td>新宿</td><td><i class="fas fa-utensils"></i></td></tr>
-              <tr><td>5/21(木)</td><td>18:00</td><td>新宿</td><td></td></tr>
-              <tr><td>5/26(火)</td><td>18:00</td><td>新宿</td><td></td></tr>
-              <tr><td>5/29(金)</td><td>18:00</td><td>渋谷</td><td></td></tr>
+              <tr><td>8(金)</td><td>18:00</td><td>新宿</td><td><i class="fas fa-utensils"></i></td></tr>
+              <tr><td>13(水)</td><td>18:00</td><td>新宿</td><td></td></tr>
+              <tr><td>18(月)</td><td>18:00</td><td>新宿</td><td><i class="fas fa-utensils"></i></td></tr>
+              <tr><td>21(木)</td><td>18:00</td><td>新宿</td><td></td></tr>
+              <tr><td>26(火)</td><td>18:00</td><td>新宿</td><td></td></tr>
+              <tr><td>29(金)</td><td>18:00</td><td>渋谷</td><td></td></tr>
             </tbody>
           </table>
         </div>
@@ -153,9 +157,9 @@
         <table>
           <!-- <thead><tr><th>月日</th><th>イベント</th><th>備考</th></tr></thead> -->
           <tbody>
-            <tr><td>4/21(火)</td><td>春イベント(@BLITZ赤坂)</td></tr>
-            <tr><td>5/2(土)</td><td>BBQ</td></tr>
-            <tr><td>5/23(土)-24(日)</td><td>新歓合宿</td></tr>
+            <tr><td>4/21(火)</td><td>春イベント(@BLITZ赤坂)</td><td><a href="http://agestock.jp/2020spring/index.html" target="_blank">▶公式サイト</a></td></tr>
+            <tr><td>5/2(土)</td><td>BBQ</td><td></td></tr>
+            <tr><td>5/23(土)-24(日)</td><td>新歓合宿</td><td></td></tr>
           </tbody>
         </table>
       </div>
@@ -183,7 +187,7 @@
     </div>
   </main>
   <footer class="footer center">
-    <p class="copyright center">Copyright&copy;AGESTOCK2019実行委員会 All Rights Reserved.</p>
+    <p class="copyright center">Copyright&copy;AGESTOCK2020実行委員会 All Rights Reserved.</p>
   </footer>
 
   <!-- ▼ メニュー ▼ -->

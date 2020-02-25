@@ -1,4 +1,11 @@
 @charset "UTF-8";
 
-/* ▼ ここに記述 ▼ */
-/* ▲ ここに記述 ▲ */
+.contact {
+  text-align: center;
+}
+i {
+  font-size: 6rem;
+}
+a {
+  color: black;
+}

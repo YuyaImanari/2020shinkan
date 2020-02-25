@@ -8,21 +8,41 @@ html {
   }
 }
 
+body {
+  background:
+    -webkit-linear-gradient(280deg, hsla(30, 80%, 65%, 0.6) 0%, hsla(30, 80%, 65%, 0) 25%),
+    -webkit-linear-gradient(40deg, hsla(205, 100%, 67%, 0.6) 0%, hsla(205, 100%, 67%, 0) 20%),
+    -webkit-linear-gradient(330deg, hsla(0, 100%, 75%, 0.6) 0%, hsla(0, 100%, 75%, 0) 60%),
+    -webkit-linear-gradient(270deg, hsla(130, 35%, 75%, 0.6) 40%, hsla(130, 35%, 75%, 0) 75%),
+    -webkit-linear-gradient(135deg, hsla(300, 100%, 75%, 0.6) 0%, hsla(300, 100%, 75%, 0) 40%),
+    -webkit-linear-gradient(330deg, hsla(180, 100%, 50%, 0.6) 40%, hsla(180, 100%, 50%, 0) 100%);
+  background:
+    linear-gradient(170deg, hsla(30, 80%, 65%, 0.6) 0%, hsla(30, 80%, 65%, 0) 25%),
+    linear-gradient(50deg, hsla(205, 100%, 67%, 0.6) 0%, hsla(205, 100%, 67%, 0) 20%),
+    linear-gradient(120deg, hsla(0, 100%, 75%, 0.6) 0%, hsla(0, 100%, 75%, 0) 60%),
+    linear-gradient(180deg, hsla(130, 35%, 75%, 0.6) 40%, hsla(130, 35%, 75%, 0) 75%),
+    linear-gradient(315deg, hsla(300, 100%, 75%, 0.6) 0%, hsla(300, 100%, 75%, 0) 40%),
+    linear-gradient(120deg, hsla(180, 100%, 50%, 0.6) 40%, hsla(180, 100%, 50%, 0) 100%);
+}
+
 main {
   min-height: calc(100vh - 20vw - 2.0rem);
   width: 100vw;
 }
-p, a, span, h1, h2, h3, h4, h5, h6, table, ul, ol {
+h1, h2, h3, h4, h5, h6, .menu a{
   font-family: 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+}
+p, a, span, table, ul, ol {
+  font-family: 'Noto Serif JP', 游明朝, 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', HGS明朝E, メイリオ, Meiryo, serif;
   font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
+  font-weight: 500;
 }
 h1, h2 {
   font-size: 2.4rem;
   margin-top: 2.0rem;
-  font-weight: 500;
 }
 h3 {
   font-size: 1.8rem;
@@ -31,8 +51,14 @@ h3 {
 p, ul, ol, table {
   font-size: 1.3rem; /* 変更するかも */
 }
+tbody {
+  font-size: 1.2rem;
+}
 p {
   line-height: 2.4rem;
+}
+li p {
+  line-height: 1.8rem;
 }
 ul {
   list-style: none;
@@ -93,9 +119,10 @@ table {
 }
 .menu-btn-bar {
   position: absolute;
-  left: 5vw;
-  /* width: 10vw;
+  /* left: 5vw;
+  width: 10vw;
   height: 1vw; */
+  left: 6vw;
   width: 8vw;
   height: 0.9vw;
   border-radius: 0.5vw;

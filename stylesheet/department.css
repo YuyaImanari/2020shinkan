@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  background: url(../images/home-background.png);
+}
+
 .department {
   margin: 0.8rem 0;
   width: 100%;

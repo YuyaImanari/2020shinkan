@@ -20,6 +20,21 @@ h1 {
   left: -250px;
   filter: blur(1px) brightness(40%) saturate(120%);
 }
+@media screen and (min-width:1024px) {
+  .top-bg {
+    left: 0;
+    top: -100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-bg {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: calc(100vh - 20vw);
+    object-fit: cover;
+  }
+}
 
 .top-title, .top-message, .top-arrow {
   position: absolute;
@@ -38,39 +53,65 @@ h1 {
 .top-arrow p {
   position: relative;
   top: 80%;
+  font-family: 'Noto Sans JP',
+  '游ゴシック体',
+  YuGothic,
+  '游ゴシック',
+  'Yu Gothic',
+  'メイリオ',
+  sans-serif;
 }
 .top-arrow i {
   font-size: 2.4rem;
 }
 
+.calendar {
+  display: flex;
+  flex-flow: column wrap;
+  height: 30.2rem;
+}
+.calendar::after {
+  content: '';
+  height: 28.6rem;
+  width: 1px;
+  margin: 0.8rem 0;
+  background-color: gray;
+}
+.calendar table:nth-child(n+3) {
+  order: 1;
+}
 .session table {
   width: 45%;
 }
 .session table tr td:nth-child(1) {
-  width: 30%;
+  width: 29%;
 }
 .session table tr td:nth-child(2) {
-  width: 30%;
+  width: 29%;
 }
 .session table tr td:nth-child(3) {
-  width: 35%;
+  width: 42%;
 }
-.session table tr td:nth-child(4) {
-  width: 5%;
-}
+/* .session table tr td:nth-child(4) {
+  width: 7%;
+} */
 .other-event table {
-  width: calc(100% - 40px);
+  width: calc(100% - 1.6rem);
 }
 .other-event table tr td:nth-child(1) {
-  width: 30%;
+  width: 20%;
 }
 .other-event table tr td:nth-child(2) {
-  width: 70%;
+  width: 50%;
+}
+.other-event table tr td:nth-child(3) {
+  width: 30%;
 }
 
 .twitter-wrapper {
   width: calc(100vw - 4.0rem);
   height: calc(100vw - 5.6rem);
+  background-color: white;
   border: 1px solid black;
   border-radius: 2%;
   margin: 0.8rem 0;
@@ -78,3 +119,55 @@ h1 {
 }
 /* 画面横向き時のtop-bg imgに注意！ */
 /* パソコン画面での日程表はカレンダー形式？ */
+
+
+/* ヘッダー仮 */
+.top-bar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(0) translateY(0);
+}
+.menu-btn {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  top: 5vw;
+  right: 3vw;
+}
+.menu-btn-bar {
+  position: absolute;
+  left: 1vw;
+  width: 8vw;
+  height: 0.9vw;
+  border-radius: 0.5vw;
+  transform: translateY(0) rotate(0deg);
+  background-color: #fff;
+  transition: all .4s;
+}
+.menu-btn-bar:nth-of-type(1) {
+  top: 2vw;
+}
+.open .menu-btn-bar:nth-of-type(1) {
+  /* -webkit-transform: translateY(4vw) rotate(-45deg);
+  transform: translateY(4vw) rotate(-45deg); */
+  -webkit-transform: translateY(3vw) rotate(-45deg);
+  transform: translateY(3vw) rotate(-45deg);
+}
+.menu-btn-bar:nth-of-type(2) {
+  top: 5vw;
+}
+.open .menu-btn-bar:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-btn-bar:nth-of-type(3) {
+  top: 8vw;
+}
+.open .menu-btn-bar:nth-of-type(3) {
+  /* -webkit-transform: translateY(-4vw) rotate(45deg);
+  transform: translateY(-4vw) rotate(45deg); */
+  -webkit-transform: translateY(-3vw) rotate(45deg);
+  transform: translateY(-3vw) rotate(45deg);
+}
