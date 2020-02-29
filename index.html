@@ -23,7 +23,7 @@
   <meta property="og:description"
     content="(説明文)">
   <meta property="og:url" content="http://www.agestock.jp/2020shinkan/index.html">
-  <meta property="og:image" content="http://www.agestock.jp/2020shinkan/images/(画像URL)">
+  <meta property="og:image" content="http://www.agestock.jp/2020shinkan/images/logo.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@_AGESTOCK">
   <!-- ▼ サイト設定 ▼ -->
@@ -33,7 +33,7 @@
   <link rel="icon" type="image/png" href="images/favicon-48.png" sizes="48x48">
   <link rel="icon" type="image/png" href="images/favicon-96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="images/favicon-192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" sizes="180x180">
   <!-- 正規化 -->
   <link rel="canonical" href="http://agestock.jp/2020shinkan/">
   <!-- ▼ CSS読み込み ▼ -->
@@ -65,18 +65,18 @@
         <ul>
           <li>
             <a href="index.html">新歓概要</a>
-            <ul>
+            <!-- <ul>
               <li><a class="menu-samepage" href="#information">新歓日程</a></li>
               <li><a class="menu-samepage" href="#participation">入団方法</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li><a href="about.html">AGESTOCKとは</a></li>
           <li><a href="schedule.html">AGESTOCKの1年間</a></li>
           <li><a href="department.html">局紹介</a></li>
-          <li><a href="message.html">新入生へのメッセージ</a></li>
+          <!-- <li><a href="message.html">新入生へのメッセージ</a></li> -->
           <li><a href="question.html">よくある質問</a></li>
           <li><a href="contact.html">お問い合わせ</a></li>
-          <li><a href="http://www.agestock.jp/2020spring/index.html" target="_blank">春イベ詳細</a></li>
+          <!-- <li><a href="http://www.agestock.jp/2020spring/index.html" target="_blank">春イベ詳細</a></li> -->
         </ul>
       </div>
     </div>
@@ -90,7 +90,7 @@
       <!-- <div class="top-message center">
         <p>君が彩る学生生活</p>
       </div> -->
-      <div class="top-arrow center">
+      <div class="top-arrow center" id="top-arrow">
         <p>新歓情報<br><i class="fas fa-chevron-down"></i></p>
       </div>
     </div>
@@ -101,6 +101,16 @@
           AGESTOCKでは新歓説明会、新歓BBQ、新歓合宿、そしてBLITZ赤坂での春イベントを通して、AGESTOCKが何を目的にどのようなことをしているかを新入生の皆さんに伝え、そして先輩や同期と仲を深める機会をたくさんご用意しております。<br>
           ただし、4/21(火)に開催される春イベント以外は<span class="red">事前にフォームの提出をお願いしております。</span>
         </p>
+      </div>
+      <div class="content flow">
+        <h3>入団までの流れ</h3>
+        <ol>
+          <li>まず、説明会参加フォームを提出！</li>
+          <li>説明会に参加！</li>
+          <li>最後に入団手続き！
+            <p>説明会で行われる入団登録会にて行います。詳しくは説明会でお話しします。</p>
+          </li>
+        </ol>
       </div>
       <div class="content session">
         <h3>新歓説明会日程表</h3>
@@ -146,7 +156,7 @@
         <p>
           　第1部：説明会(1時間程度)<br>
           　第2部：入団登録会(30分程度)<br>
-          です。すでに説明会にお越しいただいたことがある方は登録会からご参加ください。尚、説明会のみの参加も可能です。<br>
+          すでに説明会にお越しいただいたことがある方は登録会からご参加ください。尚、説明会のみの参加も可能です。<br>
           ※ <i class="fas fa-utensils"></i> は食事会があります。任意参加で、参加費は500円です。
         </p>
         <!-- ボタン押したら地図が見れるようにする -->
@@ -157,33 +167,21 @@
         <table>
           <!-- <thead><tr><th>月日</th><th>イベント</th><th>備考</th></tr></thead> -->
           <tbody>
-            <tr><td>4/21(火)</td><td>春イベント(@BLITZ赤坂)</td><td><a href="http://agestock.jp/2020spring/index.html" target="_blank">▶公式サイト</a></td></tr>
-            <tr><td>5/2(土)</td><td>BBQ</td><td></td></tr>
-            <tr><td>5/23(土)-24(日)</td><td>新歓合宿</td><td></td></tr>
+            <tr><td>4/21(火)</td><td>春イベント <a href="http://agestock.jp/2020spring/index.html" target="_blank">▶公式サイト</a></td></tr>
+            <tr><td>5/2(土)</td><td>BBQ</td></tr>
+            <tr><td>5/23(土)-24(日)</td><td>新歓合宿</td></tr>
           </tbody>
         </table>
       </div>
       <div class="content twitter">
         <h3>新着情報</h3>
-        <p>AGESTOCK新歓Twitterでは随時最新情報をツイートしております。是非フォローしてください！</p>
+        <p>AGESTOCK新歓Twitterでは随時最新情報をツイートしております。</p>
         <div class="twitter-wrapper">
           <a class="twitter-timeline" data-lang="ja" data-width="100%" data-height="100%" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/_AGESTOCK?ref_src=twsrc%5Etfw">Tweets by _AGESTOCK</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
       <!-- 注意事項はボタン押したら開くようにする -->
-    </div>
-    <div class="participation wrapper" id="participation">
-      <h2>入団までの流れ</h2>
-      <div class="content flow">
-        <ol>
-          <li>まず、説明会参加フォームを提出！</li>
-          <li>説明会に参加！</li>
-          <li>最後に入団手続き！
-            <p>説明会で行われる入団登録会にて行います。詳しくは説明会でお話しします。</p>
-          </li>
-        </ol>
-      </div>
     </div>
   </main>
   <footer class="footer center">
@@ -198,7 +196,10 @@
   <!-- 本番用 -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script> -->
   <script>
-    // 自由記述
+    $('#top-arrow').click(function () {
+      var information = $('#information').offset().top;
+      $('html, body').animate({scrollTop: information});
+    })
   </script>
 </body>
 

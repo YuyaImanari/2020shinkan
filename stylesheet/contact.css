@@ -2,10 +2,21 @@
 
 .contact {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 i {
   font-size: 6rem;
 }
 a {
   color: black;
+}
+@media (orientation: landscape) {
+  .contact {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact-item {
+    width: 30%;
+  }
 }

@@ -50,3 +50,13 @@
 .website {
   text-align: center;
 }
+.website li {
+  font-size: 1.6rem;
+}
+
+@media (orientation: landscape) {
+  .youtube {
+    width: calc(100% - 16.0rem);
+    padding-top: calc((100% - 16.0rem) * 0.5625);
+  }
+}
