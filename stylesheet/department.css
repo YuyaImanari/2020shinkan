@@ -28,8 +28,8 @@ body {
 }
 .department-title-en {
   position: absolute;
-  top: 2.8rem;
-  left: 2.8rem;
+  top: 2.5rem;
+  left: 2.5rem;
   font-size: 9.6rem;
   line-height: 9.6rem;
   font-weight: 700;
@@ -37,7 +37,7 @@ body {
 .department-title-ja {
   position: absolute;
   top: 13rem;
-  left: 3.2rem; /* ちょっと右にずらしてある */
+  left: 2.6rem; /* ちょっと右にずらしてある */
   font-size: 3.2rem;
   line-height: 3.2rem;
   font-weight: 700;
@@ -45,13 +45,31 @@ body {
 .department-intro {
   display: inline-block;
   position: absolute;
-  top: 19rem;
-  left: 2.8rem;
-  right: 2.8rem;
+  top: 17rem;
+  left: 2.5rem;
+  right: 2.5rem;
   font-size: 1.6rem;
   line-height: 2.2rem;
   text-align: justify;
 }
+.detail-btn {
+  position: absolute;
+  width: 15rem;
+  height: 5rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  background-color: black;
+  cursor: pointer;
+}
+.detail-btn p {
+  line-height: 5rem;
+  text-align: center;
+  font-family: 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* 各局正方形の背景色 */
 .ev {
   background-color: #0FF;
 }
@@ -89,19 +107,120 @@ body {
   opacity: 0.5;
 }
 
-@media (orientation: landscape) {
-  .container {
-    width: 50vw;
-    height: 50vw;
+/* モーダル */
+.modal-bg {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.center {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+.modal-wrapper {
+  z-index: 101;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5rem 0;
+  max-height: 95%; /* モーダルの枠 */
+  overflow: auto;
+  text-align: center;
+  border-radius: 1rem;
+  background: url(../images/home-background.png);
+}
+.close-cross-wrapper {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+.close-cross-wrapper p {
+  line-height: 3.2rem;
+  font-size: 3.2rem;
+}
+.detail {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left;
+}
+.detail table {
+  margin: 0;
+}
+.detail tr {
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  vertical-align: top;
+}
+.detail td:nth-child(1) {
+  text-align: right;
+}
+.close-btn {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  width: 35%;
+  border: black 1px solid;
+  margin: 3vw auto;
+  border-radius: 4vw;
+  padding: 2.5vw 0;
+}
+#modal-ev {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+#modal-sh {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+#modal-pr {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+#modal-fp {
+  background-color: rgba(136, 255, 0, 0.5);
+}
+#modal-wm {
+  background-color: rgba(255, 153, 0, 0.5);
+}
+#modal-ga {
+  background-color: rgba(255, 68, 255, 0.5);
+}
+
+/* iPhoneSE･iPhone5 */
+@media (orientation: portrait) and (max-width: 350px) {
+  .department-intro {
+    font-size: 1.4rem;
+  }
+  .detail-btn {
+    width: 12rem;
+    height: 4rem;
+  }
+  .detail-btn p {
+    font-size: 1.3rem;
+    line-height: 4rem;
   }
 }
+/* iPad以上 */
 @media screen and (min-width: 768px) {
   .container {
     width: 50vw;
     height: 50vw;
   }
 }
-@media (orientation: landscape) and (max-width: 568px) {
+/* iPhone6･7･8以上 横画面 */
+@media (orientation: landscape) and (min-width: 667px) {
+  .container {
+    width: 50vw;
+    height: 50vw;
+  }
   .department-title-ja {
     font-size: 2.4rem;
     line-height: 2.4rem;
@@ -113,5 +232,13 @@ body {
     font-size: 1.2rem;
     line-height: 2.2rem;
     text-align: justify;
+  }
+  .detail-btn {
+    width: 12rem;
+    height: 4rem;
+  }
+  .detail-btn p {
+    font-size: 1.3rem;
+    line-height: 4rem;
   }
 }

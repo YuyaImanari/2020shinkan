@@ -1,7 +1,7 @@
 $(function () {
-  var width = $(window).width();
-  var slideTime = 400;
   $('#spring').click(function () {
+    var width = $(window).width();
+    var slideTime = 400;
     $('body').animate({
       backgroundColor: '#FCD'
     }, slideTime);
@@ -15,6 +15,8 @@ $(function () {
     }, slideTime);
   });
   $('#summer').click(function () {
+    var width = $(window).width();
+    var slideTime = 400;
     $('body').animate({
       backgroundColor: '#9FB'
     }, slideTime);
@@ -28,6 +30,8 @@ $(function () {
     }, slideTime);
   });
   $('#automn').click(function () {
+    var width = $(window).width();
+    var slideTime = 400;
     $('body').animate({
       backgroundColor: '#FDB'
     }, slideTime);
@@ -41,6 +45,8 @@ $(function () {
     }, slideTime);
   });
   $('#winter').click(function () {
+    var width = $(window).width();
+    var slideTime = 400;
     $('body').animate({
       backgroundColor: '#9FF'
     }, slideTime);
