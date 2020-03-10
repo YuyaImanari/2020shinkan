@@ -182,6 +182,7 @@ body {
 }
 .detail td:nth-child(1) {
   text-align: right;
+  width: 6.5rem;
 }
 .close-btn {
   display: block;

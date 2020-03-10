@@ -50,6 +50,10 @@ h1 {
   font-size: 2.4rem;
 }
 
+.flow li, .flow p {
+  line-height: 2.4rem;
+}
+
 .calendar {
   display: flex;
   flex-flow: column wrap;
