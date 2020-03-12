@@ -7,6 +7,11 @@ html {
     font-size: 9px;
   }
 }
+@media screen and (min-width:960px) {
+  html {
+    font-size: 12px;
+  }
+}
 
 body {
   background:
@@ -42,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, h2 {
   font-size: 2.4rem;
-  margin-top: 2.0rem;
+  padding-top: 2.0rem;
 }
 h3 {
   font-size: 1.8rem;
@@ -88,75 +93,20 @@ table {
 /* ▼ ヘッダー ▼ */
 .header {
   z-index: 100;
-}
-#SP {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100vw;
   height: 20vw;
 }
-/* 
-.top-bar {
-  position: absolute;
-  height: 20vw;
-  width: 100vw;
-  background-color: #000;
+#header_pc {
+  display: none;
 }
-.top-bar img {
-  position: absolute;
-  height: 12vw;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-} */
-/* メニューボタン */
-/* .menu-btn {
-  position: absolute;
-  width: 20%;
-  height: 100%;
-  right: 0;
-  background-color: #000;
-  transition: all .4s;
-}
-.menu-btn-bar {
-  position: absolute;
-  left: 6vw;
-  width: 8vw;
-  height: 0.9vw;
-  border-radius: 0.5vw;
-  transform: translateY(0) rotate(0deg);
-  background-color: #fff;
-  transition: all .4s;
-}
-.menu-btn-bar:nth-of-type(1) {
-  top: 6vw;
-}
-.open .menu-btn-bar:nth-of-type(1) {
-  -webkit-transform: translateY(3vw) rotate(-45deg);
-  transform: translateY(3vw) rotate(-45deg);
-}
-.menu-btn-bar:nth-of-type(2) {
-  top: 9vw;
-}
-.open .menu-btn-bar:nth-of-type(2) {
-  opacity: 0;
-}
-.menu-btn-bar:nth-of-type(3) {
-  top: 12vw;
-}
-.open .menu-btn-bar:nth-of-type(3) {
-  -webkit-transform: translateY(-3vw) rotate(45deg);
-  transform: translateY(-3vw) rotate(45deg);
-} */
-
-/* ヘッダー仮 */
 .top-bar img {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  transform: translateX(0) translateY(0);
 }
 .menu-btn {
   position: absolute;
@@ -179,8 +129,6 @@ table {
   top: 2vw;
 }
 .open .menu-btn-bar:nth-of-type(1) {
-  /* -webkit-transform: translateY(4vw) rotate(-45deg);
-  transform: translateY(4vw) rotate(-45deg); */
   -webkit-transform: translateY(3vw) rotate(-45deg);
   transform: translateY(3vw) rotate(-45deg);
 }
@@ -194,18 +142,26 @@ table {
   top: 8vw;
 }
 .open .menu-btn-bar:nth-of-type(3) {
-  /* -webkit-transform: translateY(-4vw) rotate(45deg);
-  transform: translateY(-4vw) rotate(45deg); */
   -webkit-transform: translateY(-3vw) rotate(45deg);
   transform: translateY(-3vw) rotate(45deg);
 }
 
 
 /* メニュー */
+#menu-show {
+  position: absolute;
+  display: none;
+  top: 20vw;
+  right: 0;
+  height: calc(100vh - 20vw);
+  width: 100vw;
+  max-width: 414px;
+  overflow: hidden;
+}
 .menu {
   z-index: 100;
   position: absolute;
-  top: 20vw;
+  top: 0;
   left: 100vw;
   height: calc(100vh - 20vw);
   width: 100vw;
@@ -235,8 +191,93 @@ footer p {
 }
 /* ▲ フッター ▲ */
 
+/* 横向き */
 @media (orientation: landscape) {
   .content {
     margin: 0.8rem 8.0rem;
+  }
+}
+
+/* iPad */
+@media screen and (min-width: 768px) {
+  .content {
+    margin: 0.8rem 8.0rem;
+  }
+}
+
+/* パソコン */
+@media screen and (min-width: 960px) {
+  main {
+    min-height: calc(100vh - 80px - 4.0rem);
+  }
+  body {
+    background-attachment: fixed;
+  }
+
+  .header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .header {
+    width: 960px;
+    height: 80px;
+  }
+  #header_sp {
+    display: none;
+  }
+  #header_pc {
+    display: block;
+  }
+  .menu-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    right: 10px;
+  }
+  .menu-btn-bar {
+    position: absolute;
+    left: 9px;
+    width: 42px;
+    height: 5px;
+    border-radius: 2.5px;
+    transform: translateY(0) rotate(0deg);
+    background-color: #fff;
+    transition: all .4s;
+  }
+  .menu-btn-bar:nth-of-type(1) {
+    top: 15px;
+  }
+  .open .menu-btn-bar:nth-of-type(1) {
+    -webkit-transform: translateY(15px) rotate(-45deg);
+    transform: translateY(15px) rotate(-45deg);
+  }
+  .menu-btn-bar:nth-of-type(2) {
+    top: 30px;
+  }
+  .open .menu-btn-bar:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu-btn-bar:nth-of-type(3) {
+    top: 45px;
+  }
+  .open .menu-btn-bar:nth-of-type(3) {
+    -webkit-transform: translateY(-15px) rotate(45deg);
+    transform: translateY(-15px) rotate(45deg);
+  }
+
+  #menu-show {
+    top: 80px;
+    /* left: 546px; */
+    height: calc(100vh - 80px);
+  }
+  .menu {
+    top: 0;
+    left: 414px;
+    height: calc(100vh - 80px);
+  }
+  .menu-wrapper {
+    height: 100%;
+    overflow: auto;
   }
 }

@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
-body {
-  background: url(../images/home-background.png);
+@media screen and (max-width: 960px) {
+  body {
+    background: url(../images/home-background.png);
+  }
 }
 
 .department {
@@ -118,7 +120,7 @@ body {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.center {
+.modal-center {
   height: 100%;
   width: 90%;
   margin: auto;
@@ -260,5 +262,31 @@ body {
   .detail-btn p {
     font-size: 1.3rem;
     line-height: 4rem;
+  }
+}
+
+/* パソコン */
+@media screen and (min-width: 960px) {
+  .container {
+    width: 480px;
+    height: 480px;
+  }
+  .modal-center {
+    height: 100%;
+    width: 900px;
+    margin: auto;
+  }
+  .department-intro {
+    display: inline-block;
+    position: absolute;
+    top: 18rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  .close-btn {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 18px;
+    padding: 18px 0;
   }
 }

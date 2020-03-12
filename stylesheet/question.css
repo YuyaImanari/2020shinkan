@@ -75,3 +75,15 @@
 	-webkit-transform: rotateX(180deg);
 	transform: rotateX(180deg);
 }
+
+/* パソコン */
+@media screen and (min-width: 960px) {
+	.cp_qa .cp_actab label {
+		border-left: 1px solid #1b2538;
+		border-right: 1px solid #1b2538;
+	}
+	.cp_qa .cp_actab .cp_actab-content {
+		border-left: 1px solid #1b2538;
+		border-right: 1px solid #1b2538;
+	}
+}

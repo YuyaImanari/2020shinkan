@@ -38,7 +38,7 @@ h1 {
 .top-arrow p {
   position: relative;
   top: 70%;
-  font-family: 'Noto Sans JP',
+  font-family: 'Noto Sans JP', 
   '游ゴシック体',
   YuGothic,
   '游ゴシック',
@@ -48,6 +48,9 @@ h1 {
 }
 .top-arrow i {
   font-size: 2.4rem;
+}
+.second {
+  margin-top: -1.5rem;
 }
 
 .flow li, .flow p {
@@ -104,7 +107,6 @@ h1 {
   padding: 2%;
 }
 /* 画面横向き時のtop-bg imgに注意！ */
-/* パソコン画面での日程表はカレンダー形式？ */
 
 @media screen and (min-width:1025px) {
   .top-bg {
@@ -113,7 +115,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .top-bg {
     left: 0;
     top: 0;
@@ -121,7 +123,7 @@ h1 {
     height: calc(100vh - 20vw);
     object-fit: cover;
   }
-}
+} */
 
 @media (orientation: landscape) {
   .top-bg {
@@ -137,5 +139,47 @@ h1 {
   .twitter-wrapper {
     width: calc(100vw - 16.0rem);
     height: 100vh;
+  }
+}
+
+/* iPad */
+@media screen and (min-width: 768px) {
+  .top-arrow p {
+    font-size: 2.4rem;
+  }
+  .twitter-wrapper {
+    width: calc(100vw - 16.0rem);
+    height: calc(100vw - 16.0rem);
+  }
+}
+
+/* パソコン */
+@media screen and (min-width: 960px) {
+  h1, h2, footer {
+    color: #fff;
+  }
+
+  body {
+    background: url(../images/top_bg.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+  .content {
+    padding: 2.0rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1.0rem;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .twitter-wrapper {
+    margin: 0.8rem auto;
+    width: calc(960px - 32rem);
+    height: 480px;
+  }
+  .SandboxRoot.env-bp-660 .timeline-Tweet-text {
+    font-size: 1.3rem !important;
+    line-height: 2.2rem !important;
   }
 }
