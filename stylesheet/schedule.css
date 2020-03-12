@@ -70,7 +70,7 @@ h2 {
 }
 .season-contents {
   position: relative;
-  width: 401vw; /* 謎 */
+  width: 500vw; /* 謎 */
 }
 .season-contents li {
   display: inline-block;
