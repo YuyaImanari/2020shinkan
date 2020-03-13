@@ -28,6 +28,7 @@ body {
     linear-gradient(180deg, hsla(130, 35%, 75%, 0.6) 40%, hsla(130, 35%, 75%, 0) 75%),
     linear-gradient(315deg, hsla(300, 100%, 75%, 0.6) 0%, hsla(300, 100%, 75%, 0) 40%),
     linear-gradient(120deg, hsla(180, 100%, 50%, 0.6) 40%, hsla(180, 100%, 50%, 0) 100%);
+  background-attachment: fixed;
 }
 
 main {
@@ -54,7 +55,7 @@ h3 {
 }
 /* aタグ追加注意！メニューが崩れます！ */
 p, ul, ol, table, label {
-  font-size: 1.3rem; /* 変更するかも */
+  font-size: 1.4rem; /* 変更するかも */
 }
 tbody {
   font-size: 1.2rem;
@@ -209,9 +210,6 @@ footer p {
 @media screen and (min-width: 960px) {
   main {
     min-height: calc(100vh - 80px - 4.0rem);
-  }
-  body {
-    background-attachment: fixed;
   }
 
   .header, main, footer {
