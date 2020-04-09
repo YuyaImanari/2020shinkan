@@ -1,21 +1,19 @@
 @charset "UTF-8";
-
 h1 {
   font-size: 3.2rem;
 }
-
-h1,h2,footer {
+h3 {
+  margin-top: 2.4rem;
+}
+h1, h2, footer {
   color: #fff;
 }
-
 .wrapper {
   z-index: 2;
 }
-
 .top p {
   font-size: 1.6rem;
 }
-
 .top {
   position: relative;
   height: calc(100vh - 13.3vw);
@@ -23,7 +21,6 @@ h1,h2,footer {
   overflow: hidden;
   color: #eee;
 }
-
 .content {
   padding: 2.0rem;
   background-color: rgba(255, 255, 255, 0.8);
@@ -37,53 +34,42 @@ h1,h2,footer {
   left: -250px;
   filter: blur(1px) brightness(40%) saturate(120%);
 }
-
-.top-title,
-.top-message,
-.top-arrow {
+.top-title, .top-message, .top-arrow {
   position: absolute;
   height: 100%;
   width: 100%;
 }
-
 .top-title h1 {
   position: relative;
   display: inline-block;
   top: 30%;
 }
-
 .top-message p {
   position: relative;
   top: 60%;
 }
-
 .top-arrow p {
   position: relative;
   top: 70%;
-  font-family: 'Noto Sans JP',
-    '游ゴシック体',
-    YuGothic,
-    '游ゴシック',
-    'Yu Gothic',
-    'メイリオ',
-    sans-serif;
+  font-family: 'Noto Sans JP', 
+  '游ゴシック体',
+  YuGothic,
+  '游ゴシック',
+  'Yu Gothic',
+  'メイリオ',
+  sans-serif;
 }
-
 .top-arrow i {
   font-size: 2.4rem;
 }
-
 .second {
   margin-top: -1.5rem;
 }
-
 #information {
   position: absolute;
   top: calc(100vh - 13.3vw);
 }
-
-.flow li,
-.flow p {
+.flow li, .flow p {
   line-height: 2.4rem;
 }
 
@@ -92,7 +78,6 @@ h1,h2,footer {
   flex-flow: column wrap;
   height: 31.4rem;
 }
-
 .calendar::after {
   content: '';
   height: 29.8rem;
@@ -100,38 +85,30 @@ h1,h2,footer {
   margin: 0.8rem 0;
   background-color: gray;
 }
-
 .calendar table:nth-child(n+3) {
   order: 1;
 }
-
 .session table {
   width: 45%;
 }
-
 .session table tr td:nth-child(1) {
   width: 29%;
 }
-
 .session table tr td:nth-child(2) {
   width: 29%;
 }
-
 .session table tr td:nth-child(3) {
   width: 42%;
 }
-
 /* .session table tr td:nth-child(4) {
   width: 7%;
 } */
 .other-event table {
   width: calc(100% - 1.6rem);
 }
-
 .other-event table tr td:nth-child(1) {
   width: 30%;
 }
-
 .other-event table tr td:nth-child(2) {
   width: 70%;
 }
@@ -145,7 +122,6 @@ h1,h2,footer {
   margin: 0.8rem 0;
   padding: 2%;
 }
-
 /* 画面横向き時のtop-bg imgに注意！ */
 
 @media screen and (min-width:1025px) {
@@ -173,11 +149,9 @@ h1,h2,footer {
     height: calc(100vh - 20vw);
     object-fit: cover;
   }
-
   .top-title h1 {
     top: 0;
   }
-
   .twitter-wrapper {
     width: calc(100vw - 16.0rem);
     height: 100vh;
@@ -189,7 +163,6 @@ h1,h2,footer {
   .top-arrow p {
     font-size: 2.4rem;
   }
-
   .twitter-wrapper {
     width: calc(100vw - 16.0rem);
     height: calc(100vw - 16.0rem);
@@ -198,10 +171,7 @@ h1,h2,footer {
 
 /* パソコン */
 @media screen and (min-width: 960px) {
-
-  h1,
-  h2,
-  footer {
+  h1, h2, footer {
     color: #fff;
   }
 
@@ -209,7 +179,6 @@ h1,h2,footer {
     background: url(../images/top_bg.jpg) no-repeat fixed;
     background-size: cover;
   }
-
   .content {
     padding: 2.0rem;
     background-color: rgba(255, 255, 255, 0.8);
@@ -219,11 +188,9 @@ h1,h2,footer {
   .top {
     display: none;
   }
-
   .top-bg {
     display: none;
   }
-
   #information {
     top: 80px;
   }
@@ -233,7 +200,6 @@ h1,h2,footer {
     width: calc(960px - 32rem);
     height: 480px;
   }
-
   .SandboxRoot.env-bp-660 .timeline-Tweet-text {
     font-size: 1.3rem !important;
     line-height: 2.2rem !important;

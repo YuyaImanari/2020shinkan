@@ -10,10 +10,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159026298-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-159026298-1');
@@ -43,12 +40,11 @@
   <!-- ▼ CSS読み込み ▼ -->
   <link rel="stylesheet" href="stylesheet/reset.css">
   <link rel="stylesheet" href="stylesheet/common.css">
-  <link rel="stylesheet" href="stylesheet/home.css">
+  <link rel="stylesheet" href="stylesheet/home_sub.css">
   <!-- ▼ Font-Awesome ▼ -->
   <script src="https://kit.fontawesome.com/e6abc37d94.js" crossorigin="anonymous"></script>
   <!-- ▼ Google Fonts ▼ -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,500&display=swap&subset=japanese"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,500&display=swap&subset=japanese" rel="stylesheet">
 </head>
 
 <body>
@@ -93,8 +89,7 @@
         <p>君が彩る学生生活</p>
       </div> -->
       <div class="top-arrow center">
-        <p class="first" id="top-arrow">
-          <!--新歓情報<br>--><i class="fas fa-chevron-down"></i></p>
+        <p class="first" id="top-arrow"><!--新歓情報<br>--><i class="fas fa-chevron-down"></i></p>
         <p class="second"><i class="fas fa-chevron-down"></i></p>
       </div>
     </div>
@@ -212,17 +207,12 @@
   <script>
     $('.first').click(function () {
       var information = $('#information').offset().top;
-      $('html, body').animate({
-        scrollTop: information
-      });
+      $('html, body').animate({scrollTop: information});
     })
     $('.second').click(function () {
       var information = $('#information').offset().top;
-      $('html, body').animate({
-        scrollTop: information
-      });
+      $('html, body').animate({scrollTop: information});
     })
   </script>
 </body>
-
 </html>

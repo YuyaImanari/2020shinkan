@@ -13,7 +13,12 @@ html {
   }
 }
 
-body {
+.border-box {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* body {
   background:
     -webkit-linear-gradient(280deg, hsla(30, 80%, 65%, 0.6) 0%, hsla(30, 80%, 65%, 0) 25%),
     -webkit-linear-gradient(40deg, hsla(205, 100%, 67%, 0.6) 0%, hsla(205, 100%, 67%, 0) 20%),
@@ -29,17 +34,20 @@ body {
     linear-gradient(315deg, hsla(300, 100%, 75%, 0.6) 0%, hsla(300, 100%, 75%, 0) 40%),
     linear-gradient(120deg, hsla(180, 100%, 50%, 0.6) 40%, hsla(180, 100%, 50%, 0) 100%);
   background-attachment: fixed;
+} */
+body {
+  background: url(../images/home-background.png);
 }
 
 main {
-  min-height: calc(100vh - 20vw - 4.0rem);
+  min-height: calc(100vh - 13.3vw - 2.4rem);
   width: 100vw;
 }
 h1, h2, h3, h4, h5, h6, .menu a{
   font-family: 'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
 }
 p, a, span, table, ul, ol, label {
-  font-family: 'Noto Serif JP', 游明朝, 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', HGS明朝E, メイリオ, Meiryo, serif;
+  font-family: 'Noto Sans JP', 游明朝, 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', HGS明朝E, メイリオ, Meiryo, serif;
   font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -94,13 +102,25 @@ table {
 /* ▼ ヘッダー ▼ */
 .header {
   z-index: 100;
-  position: relative;
+  position: fixed;
   /* overflow: hidden; */
   width: 100vw;
-  height: 20vw;
+  height: 13.3vw;
 }
 #header_pc {
   display: none;
+}
+#top_link {
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  height: 13.3vw;
+  width: 20vw;
+}
+main {
+  position: relative;
+  top: 13.3vw;
 }
 .top-bar img {
   position: absolute;
@@ -111,15 +131,15 @@ table {
 }
 .menu-btn {
   position: absolute;
-  width: 10vw;
-  height: 10vw;
-  top: 5vw;
-  right: 3vw;
+  width: 13.3vw;
+  height: 13.3vw;
+  top: 0vw;
+  right: 0vw;
 }
 .menu-btn-bar {
   position: absolute;
-  left: 1vw;
-  width: 8vw;
+  left: 2.5vw;
+  width: 8.3vw;
   height: 0.9vw;
   border-radius: 0.5vw;
   transform: translateY(0) rotate(0deg);
@@ -127,20 +147,20 @@ table {
   transition: all .4s;
 }
 .menu-btn-bar:nth-of-type(1) {
-  top: 2vw;
+  top: 3vw;
 }
 .open .menu-btn-bar:nth-of-type(1) {
   -webkit-transform: translateY(3vw) rotate(-45deg);
   transform: translateY(3vw) rotate(-45deg);
 }
 .menu-btn-bar:nth-of-type(2) {
-  top: 5vw;
+  top: 6vw;
 }
 .open .menu-btn-bar:nth-of-type(2) {
   opacity: 0;
 }
 .menu-btn-bar:nth-of-type(3) {
-  top: 8vw;
+  top: 9vw;
 }
 .open .menu-btn-bar:nth-of-type(3) {
   -webkit-transform: translateY(-3vw) rotate(45deg);
@@ -152,9 +172,9 @@ table {
 #menu-show {
   position: absolute;
   display: none;
-  top: 20vw;
+  top: 13.3vw;
   right: 0;
-  height: calc(100vh - 20vw);
+  height: calc(100vh - 13.3vw);
   width: 100vw;
   max-width: 414px;
   overflow: hidden;
@@ -164,7 +184,7 @@ table {
   position: absolute;
   top: 0;
   left: 100vw;
-  height: calc(100vh - 20vw);
+  height: calc(100vh - 13.3vw);
   width: 100vw;
   max-width: 414px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -187,6 +207,10 @@ table {
 /* ▲ ヘッダー ▲ */
 
 /* ▼ フッター ▼ */
+footer {
+  position: relative;
+  top: 13.3vw;
+}
 footer p {
   font-size: 1.2rem;
 }
@@ -208,8 +232,29 @@ footer p {
 
 /* パソコン */
 @media screen and (min-width: 960px) {
+  /* body {
+    background:
+      -webkit-linear-gradient(280deg, hsla(30, 80%, 65%, 0.6) 0%, hsla(30, 80%, 65%, 0) 25%),
+      -webkit-linear-gradient(40deg, hsla(205, 100%, 67%, 0.6) 0%, hsla(205, 100%, 67%, 0) 20%),
+      -webkit-linear-gradient(330deg, hsla(0, 100%, 75%, 0.6) 0%, hsla(0, 100%, 75%, 0) 60%),
+      -webkit-linear-gradient(270deg, hsla(130, 35%, 75%, 0.6) 40%, hsla(130, 35%, 75%, 0) 75%),
+      -webkit-linear-gradient(135deg, hsla(300, 100%, 75%, 0.6) 0%, hsla(300, 100%, 75%, 0) 40%),
+      -webkit-linear-gradient(330deg, hsla(180, 100%, 50%, 0.6) 40%, hsla(180, 100%, 50%, 0) 100%);
+    background:
+      linear-gradient(170deg, hsla(30, 80%, 65%, 0.6) 0%, hsla(30, 80%, 65%, 0) 25%),
+      linear-gradient(50deg, hsla(205, 100%, 67%, 0.6) 0%, hsla(205, 100%, 67%, 0) 20%),
+      linear-gradient(120deg, hsla(0, 100%, 75%, 0.6) 0%, hsla(0, 100%, 75%, 0) 60%),
+      linear-gradient(180deg, hsla(130, 35%, 75%, 0.6) 40%, hsla(130, 35%, 75%, 0) 75%),
+      linear-gradient(315deg, hsla(300, 100%, 75%, 0.6) 0%, hsla(300, 100%, 75%, 0) 40%),
+      linear-gradient(120deg, hsla(180, 100%, 50%, 0.6) 40%, hsla(180, 100%, 50%, 0) 100%);
+    background-attachment: fixed;
+} */
   main {
     min-height: calc(100vh - 80px - 4.0rem);
+    top: 0;
+  }
+  .header {
+    position: relative;
   }
 
   .header, main, footer {
@@ -277,5 +322,9 @@ footer p {
   .menu-wrapper {
     height: 100%;
     overflow: auto;
+  }
+  footer {
+    position: relative;
+    top: 0;
   }
 }
