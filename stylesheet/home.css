@@ -191,20 +191,17 @@ h1,h2,footer {
   font-size: 3.2rem;
 }
 .detail {
-  position: relative;
   width: 90%;
   margin: 0 auto;
   padding: 1rem;
 }
 .detail img {
-  position: relative;
   width: 100%;
   height: auto;
 }
 .close-btn {
   z-index: 101;
   position: relative;
-  top: 6rem;
   display: block;
   font-size: 1.8rem;
   line-height: 1.8rem;
@@ -311,17 +308,17 @@ h1,h2,footer {
     font-size: 1.3rem !important;
     line-height: 2.2rem !important;
   }
-  .modal-center {
-    height: 100%;
-    width: 900px;
-    margin: auto;
+  .modal-wrapper {
+    height: 95%;
   }
-
   .close-btn {
     width: 200px;
     margin: 0 auto;
     border-radius: 18px;
     padding: 18px 0;
     top: 0;
+  }
+  .detail img {
+    width: 80%;
   }
 }
