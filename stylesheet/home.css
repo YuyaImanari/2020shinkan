@@ -90,19 +90,22 @@ h1,h2,footer {
 .calendar {
   display: flex;
   flex-flow: column wrap;
-  height: 31.4rem;
+  /* height: 31.4rem; */
 }
 
-.calendar::after {
+/* .calendar::after {
   content: '';
   height: 29.8rem;
   width: 1px;
   margin: 0.8rem 0;
   background-color: gray;
 }
-
 .calendar table:nth-child(n+3) {
   order: 1;
+} */
+
+.calendar table tr td:nth-child(1) {
+  width: 12rem;
 }
 
 .session table {
@@ -146,8 +149,78 @@ h1,h2,footer {
   padding: 2%;
 }
 
-/* 画面横向き時のtop-bg imgに注意！ */
+/* モーダル */
+.modal-bg {
+  z-index: 100;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.modal-center {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+.modal-wrapper {
+  z-index: 101;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5rem 0;
+  max-height: 95%; /* モーダルの枠 */
+  min-height: 60%;
+  overflow: auto;
+  text-align: center;
+  border-radius: 1rem;
+  background: url(../images/home-background.png);
+}
+.close-cross-wrapper {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+.close-cross-wrapper p {
+  line-height: 3.2rem;
+  font-size: 3.2rem;
+}
+.detail {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.detail img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.close-btn {
+  z-index: 101;
+  position: relative;
+  top: 6rem;
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  width: 35%;
+  border: black 1px solid;
+  margin: 3vw auto;
+  border-radius: 4vw;
+  padding: 2.5vw 0;
+}
+.close-btn a {
+  text-decoration: none;
+  color: black;
+}
 
+/* 画面横向き時のtop-bg imgに注意！ */
 @media screen and (min-width:1025px) {
   .top-bg {
     left: 0;
@@ -237,5 +310,18 @@ h1,h2,footer {
   .SandboxRoot.env-bp-660 .timeline-Tweet-text {
     font-size: 1.3rem !important;
     line-height: 2.2rem !important;
+  }
+  .modal-center {
+    height: 100%;
+    width: 900px;
+    margin: auto;
+  }
+
+  .close-btn {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 18px;
+    padding: 18px 0;
+    top: 0;
   }
 }

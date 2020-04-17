@@ -138,33 +138,41 @@ main {
 }
 .menu-btn-bar {
   position: absolute;
-  left: 2.5vw;
-  width: 8.3vw;
-  height: 0.9vw;
-  border-radius: 0.5vw;
+  left: 3vw;
+  width: 8vw;
+  height: 0.8vw;
+  border-radius: 0.4vw;
   transform: translateY(0) rotate(0deg);
   background-color: #fff;
   transition: all .4s;
 }
+.menu-text {
+  position: absolute;
+  text-align: center;
+  width: 13.3vw;
+  top: 8vw;
+  font-size: 3vw;
+  color: #fff;
+}
 .menu-btn-bar:nth-of-type(1) {
-  top: 3vw;
+  top: 2vw;
 }
 .open .menu-btn-bar:nth-of-type(1) {
-  -webkit-transform: translateY(3vw) rotate(-45deg);
-  transform: translateY(3vw) rotate(-45deg);
+  -webkit-transform: translateY(2.4vw) rotate(-45deg);
+  transform: translateY(2.4vw) rotate(-45deg);
 }
 .menu-btn-bar:nth-of-type(2) {
-  top: 6vw;
+  top: 4.5vw;
 }
 .open .menu-btn-bar:nth-of-type(2) {
   opacity: 0;
 }
 .menu-btn-bar:nth-of-type(3) {
-  top: 9vw;
+  top: 7vw;
 }
 .open .menu-btn-bar:nth-of-type(3) {
-  -webkit-transform: translateY(-3vw) rotate(45deg);
-  transform: translateY(-3vw) rotate(45deg);
+  -webkit-transform: translateY(-2.4vw) rotate(45deg);
+  transform: translateY(-2.4vw) rotate(45deg);
 }
 
 
@@ -199,7 +207,7 @@ main {
 }
 .menu-wrapper > ul > li {
   font-size: 2.4rem;
-  margin: 0.8rem 0;
+  margin: 1.6rem 0;
 }
 .menu-wrapper > ul > li > ul {
   font-size: 1.8rem;
@@ -326,5 +334,9 @@ footer p {
   footer {
     position: relative;
     top: 0;
+  }
+
+  .menu-text {
+    display: none;
   }
 }
