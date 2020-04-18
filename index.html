@@ -92,8 +92,12 @@
           <div class="detail">
             <img src="images/online.jpg" alt="オンライン新歓解禁">
           </div>
+          <p>本日17時から！<br>▼以下で詳細を確認！▼</p>
           <div class="close-btn close">
             <a href="#information">詳細を見る</a>
+          </div>
+          <div class="close-btn close" id="never">
+            <a href="#information">次回から表示しない</a>
           </div>
         </div>
       </div>
@@ -137,9 +141,9 @@
           </div>
           <h3>オンライン説明会の参加の仕方</h3>
           <p>
-            LINEオープンチャットに参加<br>▶
+            LINEオープンチャットに参加▶
             <a
-              href="https://line.me/ti/g2/Yu0Xc0bZU7LYgNJmymjvgw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">コチラ(LINEが開きます)</a><br>
+              href="https://line.me/ti/g2/Yu0Xc0bZU7LYgNJmymjvgw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">コチラ</a><br>
             説明会の時間になったらオープンチャットのトーク内でZoomのURLが送られてくるのでそこから説明会に参加！
           </p>
         </div>
@@ -263,10 +267,12 @@
         scrollTop: information
       });
     })
+    $('#never').click(function () {
+      $.cookie('btnFlg', 'on', { expires: 3, path: '/' });
+    })
     var date = new Date(2020, 4, 29, 18, 00, 00);
     var today = new Date();
     if (today < date && $.cookie('btnFlg')!='on') {
-      $.cookie('btnFlg', 'on', { expires: 3, path: '/' });
       var ua = navigator.userAgent;
       var bg = document.getElementById('background');
       var prevent = function (e) {

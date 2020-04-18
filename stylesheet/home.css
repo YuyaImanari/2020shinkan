@@ -206,7 +206,7 @@ h1,h2,footer {
   font-size: 1.8rem;
   line-height: 1.8rem;
   text-align: center;
-  width: 35%;
+  width: 20rem;
   border: black 1px solid;
   margin: 3vw auto;
   border-radius: 4vw;
@@ -308,12 +308,15 @@ h1,h2,footer {
     font-size: 1.3rem !important;
     line-height: 2.2rem !important;
   }
+  .modal-center {
+    max-width: 960px;
+  }
   .modal-wrapper {
     height: 95%;
   }
   .close-btn {
     width: 200px;
-    margin: 0 auto;
+    margin: 1.2rem auto;
     border-radius: 18px;
     padding: 18px 0;
     top: 0;
